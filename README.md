@@ -80,5 +80,5 @@ Challenger - Deviget
 ## Specifications
 
 - Controller
-    - frontend > addProduct/index/index
+    - frontend > addProduct/?id=1245
     
