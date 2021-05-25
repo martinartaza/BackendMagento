@@ -1,0 +1,22 @@
+{
+    "name": "deviget/module-addp_roduct_for_url",
+    "description": "Challenger - Deviget",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Sebastian Martin, Artaza Saade",
+            "email": "martin.artaza@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Deviget\\AddProductForUrl\\": ""
+        }
+    }
+}

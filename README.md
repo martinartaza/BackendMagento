@@ -30,3 +30,55 @@ You need to fully complete the challenge. We suggest not to spend more than 3 da
 What we want to see is how well you handle yourself given the time you spend on the problem, how you think, and how you prioritize when time is sufficient to solve everything.
 
 Please email your solution as soon as you have completed the challenge or the time is up.
+
+---
+# Solution: Sebastian Artaza - Module Deviget AddProductForUrl
+
+    ``deviget/module-add_product_for_url``
+
+- [Main Functionalities](#markdown-header-main-functionalities)
+- [Installation](#markdown-header-installation)
+- [Configuration](#markdown-header-configuration)
+- [Specifications](#markdown-header-specifications)
+
+
+## Main Functionalities
+Challenger - Deviget
+
+## Installation
+\* = in production please use the `--keep-generated` option
+
+### Type 1: Zip file
+
+- Unzip the zip file in `app/code/Deviget`
+- Enable the module by running `php bin/magento module:enable Deviget_AddProductForUrl`
+- Apply database updates by running `php bin/magento setup:upgrade`\*
+- Flush the cache by running `php bin/magento cache:flush`
+
+### Type 2: Composer
+
+- Make the module available in a composer repository for example:
+    - private repository `repo.magento.com`
+    - public repository `packagist.org`
+    - public github repository as vcs
+- Add the composer repository to the configuration by running `composer config repositories.repo.magento.com composer https://repo.magento.com/`
+- Install the module composer by running `composer require deviget/module-addproductforurl`
+- enable the module by running `php bin/magento module:enable Deviget_AddProductForUrl`
+- apply database updates by running `php bin/magento setup:upgrade`\*
+- Flush the cache by running `php bin/magento cache:flush`
+
+
+## Configuration
+    - New tab Deviget
+        - Section general
+            - Enabled: "active and disabled controller"
+            - Enabled window time: add check in window time
+            - Start Time: From Date Time
+            - Finish Time: To Date Time
+
+
+## Specifications
+
+- Controller
+    - frontend > addProduct/index/index
+    
